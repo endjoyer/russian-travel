@@ -3,4 +3,23 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+  padding: 0 48px 0 40px;
+}
+
+@media (max-width: 1024px) {
+  .place__website {
+    padding: 0 48px 0 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .place__website {
+    padding: 0 24px 0 28px;
+  }
+}
+
+@media (max-width: 425px) {
+  .place__website {
+    padding: 0 16px;
+  }
 }

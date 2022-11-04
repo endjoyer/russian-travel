@@ -1,17 +1,10 @@
 .lead__image {
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .lead__image {
-    margin-left: -24px;
-    width: calc(100% + 24px + 24px);
-  }
-}
-
-@media (max-width: 425px) {
-  .lead__image {
-    margin-left: -16px;
-    width: calc(100% + 16px + 16px);
+    padding: 0;
   }
 }

@@ -9,13 +9,15 @@
 
 @media (max-width: 767px) {
   .lead__title {
-    font-size: 63px;
+    padding: 0 15px;
+    font-size: 56px;
     line-height: 110%;
   }
 }
 
 @media (max-width: 425px) {
   .lead__title {
+    padding: 0 10px;
     font-size: 40px;
   }
 }

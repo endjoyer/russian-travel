@@ -5,11 +5,18 @@
   font-size: 30px;
   line-height: 120%;
   margin: 32px auto 64px;
+  padding: 0 48px;
 }
 
 @media (max-width: 1024px) {
   .lead__subtitle {
     margin: 32px auto 54px;
+  }
+}
+
+@media (max-width: 800px) {
+  .lead__subtitle {
+    padding: 0 24px;
   }
 }
 
@@ -24,5 +31,6 @@
   .lead__subtitle {
     font-size: 16px;
     margin: 16px auto 40px;
+    padding: 0 16px;
   }
 }

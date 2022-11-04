@@ -3,16 +3,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(46px, auto) 1fr;
-  gap: 40px;
+  gap: 48px;
 }
 
-@media (max-width: 1024px) {
-  .place {
-    gap: 32px;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .place {
     gap: 28px;
   }
@@ -27,7 +21,7 @@
 
 @media (max-width: 425px) {
   .place {
-    gap: 40px;
+    gap: 32px;
     padding: 50px 0 0 0;
   }
 }

@@ -1,13 +1,18 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 28px 0;
+  padding: 28px 48px;
   margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding: 28px 24px;
+  }
 }
 
 @media (max-width: 425px) {
   .header {
-    max-height: 42px;
-    padding: 16px 0 28px;
+    padding: 16px 16px 28px;
   }
 }

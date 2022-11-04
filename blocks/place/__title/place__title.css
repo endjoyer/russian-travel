@@ -3,10 +3,12 @@
   font-size: 72px;
   line-height: 106%;
   margin: 0;
+  padding: 0 0 0 48px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .place__title {
+    padding: 0 24px;
     font-size: 50px;
     line-height: 110%;
   }
@@ -14,6 +16,7 @@
 
 @media (max-width: 425px) {
   .place__title {
+    padding: 0 16px;
     font-size: 32px;
   }
 }
