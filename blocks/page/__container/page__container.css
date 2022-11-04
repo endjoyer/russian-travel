@@ -3,3 +3,15 @@
   margin: 0 auto;
   padding: 0 48px;
 }
+
+@media (max-width: 768px) {
+  .page__container {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .page__container {
+    padding: 0 16px;
+  }
+}
