@@ -10,7 +10,7 @@
 
 **Сайт**
 
-https://endjoyer.github.io/russian-travel/
+* [Ссылка сайта на GitHub Pages](https://endjoyer.github.io/russian-travel/)
 
 **Figma**
 
