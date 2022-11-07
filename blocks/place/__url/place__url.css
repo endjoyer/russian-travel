@@ -6,3 +6,9 @@
   letter-spacing: 2px;
   margin: 0;
 }
+
+@media (max-width: 767px) {
+  .place__url {
+    margin: 0 0 12px;
+  }
+}

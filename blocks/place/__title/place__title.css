@@ -3,14 +3,26 @@
   font-size: 72px;
   line-height: 106%;
   margin: 0;
-  padding: 0 0 0 48px;
+  padding: 0 0 8px 0;
+}
+
+@media (max-width: 1025px) {
+  .place__title {
+    padding: 0 0 16px 0;
+  }
 }
 
 @media (max-width: 800px) {
   .place__title {
-    padding: 0 24px;
-    font-size: 50px;
+    max-width: 330px;
+    font-size: 42px;
     line-height: 110%;
+  }
+}
+
+@media (max-width: 767px) {
+  .place__title {
+    padding: 0 24px;
   }
 }
 

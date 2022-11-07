@@ -3,18 +3,25 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 0 48px 0 40px;
+  padding: 0 0 8px 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .place__website {
-    padding: 0 48px 0 32px;
+    padding: 0 0 16px 0;
   }
 }
 
 @media (max-width: 800px) {
   .place__website {
-    padding: 0 24px 0 28px;
+    padding: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .place__website {
+    display: block;
+    padding: 0 24px;
   }
 }
 

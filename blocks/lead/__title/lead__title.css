@@ -7,6 +7,12 @@
   margin: 28px auto 0;
 }
 
+@media (max-width: 1024px) {
+  .lead__title {
+    margin: 20px auto 0;
+  }
+}
+
 @media (max-width: 767px) {
   .lead__title {
     padding: 0 15px;

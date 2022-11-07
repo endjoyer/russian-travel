@@ -3,17 +3,10 @@
   font-size: 18px;
   line-height: 163%;
   margin: 26px 0 0 0;
-  padding: 0 48px 0 40px;
 }
 
 .place__text:first-child {
   margin: 0;
-}
-
-@media (max-width: 1024px) {
-  .place__text {
-    padding: 0 48px 0 32px;
-  }
 }
 
 @media (max-width: 850px) {
@@ -22,13 +15,7 @@
   }
 }
 
-@media (max-width: 800px) {
-  .place__text {
-    padding: 0 24px 0 28px;
-  }
-}
-
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .place__text {
     padding: 0 24px;
   }
