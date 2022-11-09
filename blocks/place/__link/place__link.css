@@ -3,4 +3,6 @@
   font-size: 18px;
   line-height: 122%;
   margin: 12px 0 0 0;
+  padding: 0;
+  border-bottom: #fff 2px solid;
 }

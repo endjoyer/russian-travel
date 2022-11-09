@@ -1,4 +1,4 @@
-.lang-links__lang-link {
+.header__lang-link {
   display: flex;
   align-items: flex-end;
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 425px) {
-  .lang-links__lang-link {
+  .header__lang-link {
     font-size: 18px;
     line-height: 111%;
   }

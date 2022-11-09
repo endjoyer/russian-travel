@@ -20,13 +20,7 @@
   }
 }
 
-@media (max-width: 767px) {
-  .place__title {
-    padding: 0 24px;
-  }
-}
-
-@media (max-width: 425px) {
+@media (max-width: 640px) {
   .place__title {
     padding: 0 16px;
     font-size: 32px;

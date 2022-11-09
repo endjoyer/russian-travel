@@ -10,16 +10,10 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   .footer {
     flex-direction: column;
-    padding: 88px 24px 24px;
-    gap: 48px;
-  }
-}
-
-@media (max-width: 425px) {
-  .footer {
     padding: 64px 16px 24px;
+    gap: 48px;
   }
 }

@@ -1,8 +1,8 @@
 .place__text {
   font-weight: 400;
   font-size: 18px;
-  line-height: 163%;
-  margin: 26px 0 0 0;
+  line-height: 29.34px;
+  margin: 25px 0 0 0;
 }
 
 .place__text:first-child {
@@ -12,16 +12,11 @@
 @media (max-width: 850px) {
   .place__text {
     font-size: 16px;
+    line-height: 26px;
   }
 }
 
-@media (max-width: 767px) {
-  .place__text {
-    padding: 0 24px;
-  }
-}
-
-@media (max-width: 425px) {
+@media (max-width: 640px) {
   .place__text {
     padding: 0 16px;
   }
