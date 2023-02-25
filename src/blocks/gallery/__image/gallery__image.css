@@ -2,4 +2,11 @@
   max-width: 100%;
   min-height: 100%;
   display: block;
+  object-fit: cover;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.gallery__image:hover {
+  transform: scale(1.06);
 }
