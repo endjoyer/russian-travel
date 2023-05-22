@@ -30,6 +30,32 @@
 
 ---
 
+### Как установить и запустить проект:
+
+- Клонировать репозиторий:
+
+```console
+    git clone https://github.com/endjoyer/mesto.git
+```
+
+- Установить зависимости:
+
+```console
+    npm install
+```
+
+- Собрать проект Вебпаком:
+
+```console
+    npm run build
+```
+
+- Запустить проект на локальном сервере:
+
+```console
+    npm run dev
+```
+
 **Сайт**
 
 - [Ссылка сайта на GitHub Pages](https://endjoyer.github.io/russian-travel/)
