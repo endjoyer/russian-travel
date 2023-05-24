@@ -56,6 +56,8 @@
     npm run dev
 ```
 
+---
+
 **Сайт**
 
 - [Ссылка сайта на GitHub Pages](https://endjoyer.github.io/russian-travel/)

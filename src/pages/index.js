@@ -1,6 +1,6 @@
 import "./index.css";
-import PopupWithImage from "../scripts/PopupWithImage.js";
-import { langArr } from "../scripts/lang.js";
+import PopupWithImage from "../components/PopupWithImage.js";
+import { langArr } from "../utils/lang.js";
 
 const popupImg = document.querySelector(".popup");
 const picturesPleas = Array.from(document.querySelectorAll(".place__image"));
@@ -40,27 +40,28 @@ picturesGallerys.forEach((picture) => {
 //--------------------Langwitch---------------------------------------
 const ruLink = document.querySelector("#ru");
 const enLink = document.querySelector("#en");
-const allLang = ["en", "ru"];
+const allLang = ["ru", "en"];
 
-const changeURLLanguage = () => {
-  const activeLang = document.querySelector(".header__lang-link_activ");
-  const lang = activeLang.name;
-  location.href = `${window.location.pathname}#${lang}`;
+const changeURLLanguage = (lang) => {
+  const url = new URL(window.location.href);
+  url.searchParams.set("lang", lang);
+  history.pushState({}, "", url.toString());
 };
 
 const changeLanguage = () => {
   const activeLang = document.querySelector(".header__lang-link_activ");
-  let hash = window.location.hash.substr(1);
-  if (!allLang.includes(hash)) {
-    location.href = `${window.location.pathname}#en`;
-    location.reload();
+  let lang = new URL(window.location.href).searchParams.get("lang");
+  console.log(lang);
+  if (!allLang.includes(lang)) {
+    lang = "en";
+    changeURLLanguage(lang);
   }
-  activeLang.name = hash;
-  document.querySelector("title").innerHTML = langArr["lead__title"][hash];
+  activeLang.name = lang;
+  document.querySelector("title").innerHTML = langArr["lead__title"][lang];
   for (let key in langArr) {
     const elem = document.querySelector(`.lng-${key}`);
     if (elem) {
-      elem.innerHTML = langArr[key][hash];
+      elem.innerHTML = langArr[key][lang];
     }
   }
 };
@@ -71,7 +72,7 @@ const handleLangClick = (event) => {
   if (event.target === activeLang) return;
   activeLang.classList.remove("header__lang-link_activ");
   event.target.classList.add("header__lang-link_activ");
-  changeURLLanguage();
+  changeURLLanguage(event.target.id);
   changeLanguage();
 };
 
