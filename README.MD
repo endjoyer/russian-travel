@@ -35,7 +35,7 @@
 - Клонировать репозиторий:
 
 ```console
-    git clone https://github.com/endjoyer/mesto.git
+    git clone https://github.com/endjoyer/russian-travel
 ```
 
 - Установить зависимости:
